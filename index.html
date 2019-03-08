@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GIPHY API RMS</title>
+  <link rel="stylesheet" type="text/css" href="assests/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assests/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h2>Click on any of the anmials below to see giphy's based on that animal</h2>
+    <br>
+
+    <h2>Click on the image to automate it and click again to stop it</h2>
+  </header>
+  <br>
+  <br>
+
+  <!-- Div to display the buttons-  will create the array in js for the buttons -->
+  <div id="buttonItems"></div>
+
+  <!-- The form that user will add an animal of their choosing to the array -->
+  <form>
+    <div class="row">
+      <div class="col-md-3">
+        <input type="text" id="inputAnimal" class="form-control" placeholder="Add your favorite animal">
+        <input id="addAnimal" type="submit" class="btn btn-success" value="Click here to add animal">
+        <!-- If the user picks an animal that does not have images they will get an error (this is done in js)  the error will display here-->
+        <span id="entry"></span>
+      </div>
+    </div>
+  </form>
+  <br>
+
+
+  <!-- Div for the ratings of the images -->
+  <div id="ratings"></div>
+
+
+
+  <!-- This links to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="assests/javascript/app.js"></script>
+</body>
+
+</html>
